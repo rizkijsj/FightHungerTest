@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jDV-6z-NTv">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profil-->
+        <scene sceneID="9q5-qE-YwG">
+            <objects>
+                <viewController storyboardIdentifier="UbahProfil" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jDV-6z-NTv" customClass="UbahprofilViewController" customModule="FightHunger_Donatur" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JeY-eD-0W3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtc-uV-H0X">
+                                <rect key="frame" x="20" y="66" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nomor telfon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COr-q3-N1K">
+                                <rect key="frame" x="20" y="120" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="cth: Nicholas saputra" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvr-gC-OTB" customClass="CustomTextField" customModule="FightHunger_Donatur" customModuleProvider="target">
+                                <rect key="frame" x="20" y="91" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="hJC-xa-eyw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gY3-BJ-EbD" customClass="CustomTextField" customModule="FightHunger_Donatur" customModuleProvider="target">
+                                <rect key="frame" x="20" y="144" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="jjd-Xf-GJP"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vi-5z-i9F">
+                                <rect key="frame" x="20" y="173" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="cth: abcd@example.com" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tmg-kx-89W" customClass="CustomTextField" customModule="FightHunger_Donatur" customModuleProvider="target">
+                                <rect key="frame" x="20" y="197" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Uko-XH-0Tr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYC-Fi-SBm">
+                                <rect key="frame" x="20" y="262" width="271" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.75686274509999996" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jtc-uV-H0X" firstAttribute="top" secondItem="299-Mc-Ipj" secondAttribute="top" constant="22" id="5mB-DZ-eSQ"/>
+                            <constraint firstItem="COr-q3-N1K" firstAttribute="leading" secondItem="Jvr-gC-OTB" secondAttribute="leading" id="BKP-vp-xnL"/>
+                            <constraint firstItem="Tmg-kx-89W" firstAttribute="top" secondItem="7vi-5z-i9F" secondAttribute="bottom" constant="3" id="Biv-LA-uz3"/>
+                            <constraint firstItem="7vi-5z-i9F" firstAttribute="trailing" secondItem="gY3-BJ-EbD" secondAttribute="trailing" id="GFi-Lc-UES"/>
+                            <constraint firstItem="gY3-BJ-EbD" firstAttribute="top" secondItem="COr-q3-N1K" secondAttribute="bottom" constant="3" id="Gxo-jY-Fbz"/>
+                            <constraint firstItem="7vi-5z-i9F" firstAttribute="trailing" secondItem="Tmg-kx-89W" secondAttribute="trailing" id="OPh-YN-ERy"/>
+                            <constraint firstItem="Jvr-gC-OTB" firstAttribute="leading" secondItem="Jtc-uV-H0X" secondAttribute="leading" id="Ph5-6R-X6p"/>
+                            <constraint firstItem="7vi-5z-i9F" firstAttribute="leading" secondItem="gY3-BJ-EbD" secondAttribute="leading" id="V0O-xI-jXN"/>
+                            <constraint firstItem="7vi-5z-i9F" firstAttribute="top" secondItem="gY3-BJ-EbD" secondAttribute="bottom" constant="9" id="W1I-kI-5OW"/>
+                            <constraint firstItem="COr-q3-N1K" firstAttribute="leading" secondItem="gY3-BJ-EbD" secondAttribute="leading" id="YMA-ys-E5o"/>
+                            <constraint firstItem="Jvr-gC-OTB" firstAttribute="top" secondItem="Jtc-uV-H0X" secondAttribute="bottom" constant="4" id="ZEG-bt-Pu2"/>
+                            <constraint firstItem="COr-q3-N1K" firstAttribute="trailing" secondItem="gY3-BJ-EbD" secondAttribute="trailing" id="bIa-nV-Dyk"/>
+                            <constraint firstItem="COr-q3-N1K" firstAttribute="trailing" secondItem="Jvr-gC-OTB" secondAttribute="trailing" id="bom-Wj-CQ3"/>
+                            <constraint firstItem="Jtc-uV-H0X" firstAttribute="leading" secondItem="299-Mc-Ipj" secondAttribute="leading" constant="20" id="iZQ-kO-hiV"/>
+                            <constraint firstItem="Jvr-gC-OTB" firstAttribute="trailing" secondItem="Jtc-uV-H0X" secondAttribute="trailing" id="icB-RR-9Rb"/>
+                            <constraint firstItem="7vi-5z-i9F" firstAttribute="leading" secondItem="Tmg-kx-89W" secondAttribute="leading" id="qUC-iX-aZr"/>
+                            <constraint firstItem="299-Mc-Ipj" firstAttribute="trailing" secondItem="Jtc-uV-H0X" secondAttribute="trailing" constant="20" id="r1a-Yz-Qi1"/>
+                            <constraint firstItem="COr-q3-N1K" firstAttribute="top" secondItem="Jvr-gC-OTB" secondAttribute="bottom" constant="9" id="rk9-hZ-Uok"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="299-Mc-Ipj"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Profil" id="NC9-4q-QdK">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GeO-d0-Q0G">
+                            <color key="tintColor" red="0.75686274509999996" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="cancelBtn:" destination="jDV-6z-NTv" id="kAG-CQ-jQ1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Simpan" id="dmh-Uy-s7d">
+                            <color key="tintColor" red="0.75686274509999996" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="submitBtn:" destination="jDV-6z-NTv" id="rhd-Af-3Jq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="continueButton" destination="dmh-Uy-s7d" id="6dd-kC-Ond"/>
+                        <outlet property="emailTxt" destination="Tmg-kx-89W" id="4dq-uh-E7E"/>
+                        <outlet property="errorMssg" destination="AYC-Fi-SBm" id="r3M-27-46K"/>
+                        <outlet property="namaTxt" destination="Jvr-gC-OTB" id="gYY-71-VRM"/>
+                        <outlet property="telfonTxt" destination="gY3-BJ-EbD" id="5IL-Te-duq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoI-9k-jT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672.79999999999995" y="-1328.5714285714287"/>
+        </scene>
+    </scenes>
+</document>

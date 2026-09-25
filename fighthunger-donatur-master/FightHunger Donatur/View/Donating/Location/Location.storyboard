@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ky8-VC-NNS">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lokasi-->
+        <scene sceneID="cam-Zl-Fyk">
+            <objects>
+                <viewController storyboardIdentifier="LokasiPengambilan" title="Lokasi" id="dfe-hM-wgt" customClass="LokasiPengambilan" customModule="FightHunger_Donatur" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mgu-fg-LL5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQE-GQ-TmY">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RX6-hZ-Uju">
+                                <rect key="frame" x="0.0" y="642" width="375" height="136"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tNh-st-Qi6">
+                                        <rect key="frame" x="20" y="8" width="335" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="260" horizontalCompressionResistancePriority="745" verticalCompressionResistancePriority="745" text="Alamat Anda:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfl-BK-klk">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUc-FC-Czl">
+                                                <rect key="frame" x="0.0" y="26" width="335" height="38"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="qHD-l7-Y73"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxe-KN-JBk">
+                                        <rect key="frame" x="20" y="80" width="335" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="zPK-a2-d4c"/>
+                                        </constraints>
+                                        <state key="normal" image="set lokasi pengambilan"/>
+                                        <connections>
+                                            <segue destination="asP-cf-mKD" kind="unwind" identifier="balikKeDonasi" unwindAction="unwindToPushDonasi:" id="x8W-7B-iAa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tNh-st-Qi6" secondAttribute="trailing" constant="20" symbolic="YES" id="2RI-nO-68a"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hxe-KN-JBk" secondAttribute="trailing" constant="20" symbolic="YES" id="6Hx-1P-Qnw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hxe-KN-JBk" secondAttribute="bottom" constant="8" id="Dbx-PB-XpK"/>
+                                    <constraint firstItem="Hxe-KN-JBk" firstAttribute="leading" secondItem="RX6-hZ-Uju" secondAttribute="leading" constant="20" symbolic="YES" id="aRC-ck-npc"/>
+                                    <constraint firstItem="Hxe-KN-JBk" firstAttribute="top" secondItem="tNh-st-Qi6" secondAttribute="bottom" constant="8" id="b3k-ww-8ak"/>
+                                    <constraint firstItem="tNh-st-Qi6" firstAttribute="top" secondItem="RX6-hZ-Uju" secondAttribute="top" constant="8" id="foC-TO-vkV"/>
+                                    <constraint firstItem="tNh-st-Qi6" firstAttribute="leading" secondItem="RX6-hZ-Uju" secondAttribute="leading" constant="20" symbolic="YES" id="sRI-sk-Zbt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkT-1z-FYg">
+                                <rect key="frame" x="303" y="554" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jkT-1z-FYg" secondAttribute="height" multiplier="1:1" id="Lcd-FX-vdV"/>
+                                    <constraint firstAttribute="height" constant="56" id="xYK-r1-yfm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Current Location"/>
+                                <connections>
+                                    <action selector="btnTitikAwal:" destination="dfe-hM-wgt" eventType="touchUpInside" id="afJ-cT-m52"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lokasi anda" translatesAutoresizingMaskIntoConstraints="NO" id="TQO-QW-uly">
+                                <rect key="frame" x="83.000000000000014" y="353" width="209.33333333333337" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TQO-QW-uly" secondAttribute="height" multiplier="157 : 60" id="RzZ-zf-E8I"/>
+                                    <constraint firstAttribute="height" constant="80" id="vtI-64-VyK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RX6-hZ-Uju" firstAttribute="leading" secondItem="XQE-GQ-TmY" secondAttribute="leading" id="2Gr-tT-5Pe"/>
+                            <constraint firstItem="XQE-GQ-TmY" firstAttribute="top" secondItem="o1n-hv-onG" secondAttribute="top" id="3cm-SB-qAJ"/>
+                            <constraint firstItem="RX6-hZ-Uju" firstAttribute="top" secondItem="jkT-1z-FYg" secondAttribute="bottom" constant="32" id="BAw-Ld-vVC"/>
+                            <constraint firstItem="o1n-hv-onG" firstAttribute="trailing" secondItem="jkT-1z-FYg" secondAttribute="trailing" constant="16" id="Ct1-Dw-67K"/>
+                            <constraint firstItem="XQE-GQ-TmY" firstAttribute="leading" secondItem="o1n-hv-onG" secondAttribute="leading" id="DCb-pF-qp1"/>
+                            <constraint firstItem="XQE-GQ-TmY" firstAttribute="bottom" secondItem="RX6-hZ-Uju" secondAttribute="bottom" id="JL4-d5-un7"/>
+                            <constraint firstItem="RX6-hZ-Uju" firstAttribute="trailing" secondItem="XQE-GQ-TmY" secondAttribute="trailing" id="VHy-xm-cqd"/>
+                            <constraint firstItem="TQO-QW-uly" firstAttribute="bottom" secondItem="XQE-GQ-TmY" secondAttribute="centerY" id="WG4-T4-KbX"/>
+                            <constraint firstAttribute="trailing" secondItem="XQE-GQ-TmY" secondAttribute="trailing" id="YW5-uV-Rh2"/>
+                            <constraint firstItem="o1n-hv-onG" firstAttribute="bottom" secondItem="XQE-GQ-TmY" secondAttribute="bottom" id="njJ-AH-4TM"/>
+                            <constraint firstItem="TQO-QW-uly" firstAttribute="centerX" secondItem="XQE-GQ-TmY" secondAttribute="centerX" id="pyf-cU-6Qp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o1n-hv-onG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lokasi" id="u5U-4E-ico">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pHf-gm-RSR">
+                            <inset key="imageInsets" minX="-10" minY="0.0" maxX="0.0" maxY="-12"/>
+                            <color key="tintColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="backBtn:" destination="dfe-hM-wgt" id="UV3-OM-eBl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="jfE-GE-Dn7">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="searchBtn:" destination="dfe-hM-wgt" id="Xl4-m7-Um7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="alamat" destination="HUc-FC-Czl" id="otH-Gl-wT8"/>
+                        <outlet property="bacBtnOutlet" destination="pHf-gm-RSR" id="CMY-OK-v37"/>
+                        <outlet property="peta" destination="XQE-GQ-TmY" id="hHR-g5-59K"/>
+                        <outlet property="pinPoint" destination="TQO-QW-uly" id="xeC-d9-spA"/>
+                        <outlet property="searchOutlet" destination="jfE-GE-Dn7" id="sAa-CT-cC2"/>
+                        <outlet property="setLokasi" destination="Hxe-KN-JBk" id="yWV-IJ-fBY"/>
+                        <outlet property="titikAwal" destination="jkT-1z-FYg" id="HnD-uz-ZFk"/>
+                        <segue destination="sDW-gH-ANs" kind="presentation" identifier="kelist" id="bKv-cb-KhD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpd-vv-9Js" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="asP-cf-mKD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3117.5999999999999" y="2216.7487684729067"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uKL-Dm-gDh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ky8-VC-NNS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kxG-MR-kDz">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dfe-hM-wgt" kind="relationship" relationship="rootViewController" id="7Cx-mL-RwH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYH-YW-ffy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2303" y="2217"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cFm-72-vGX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sDW-gH-ANs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XWI-BT-3wO">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BZh-iI-BWx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="S1R-xq-KlR" kind="relationship" relationship="rootViewController" id="1hZ-JE-CRj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XpW-y1-IcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3954.4000000000001" y="2216.7487684729067"/>
+        </scene>
+        <!--Hasil Pencarian-->
+        <scene sceneID="pOb-Ou-jFb">
+            <objects>
+                <viewController id="S1R-xq-KlR" customClass="LokasiList" customModule="FightHunger_Donatur" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sqR-kL-lv3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="iax-cF-dre">
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="xhZ-oH-VBY"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="S1R-xq-KlR" id="puH-ip-MS9"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UbM-xv-4kL">
+                                <rect key="frame" x="0.0" y="144" width="375" height="668"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="S1R-xq-KlR" id="oUO-ff-CwX"/>
+                                    <outlet property="delegate" destination="S1R-xq-KlR" id="2HA-Fe-OkT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iax-cF-dre" firstAttribute="trailing" secondItem="qfs-0D-ynv" secondAttribute="trailing" id="3NX-gg-dDo"/>
+                            <constraint firstAttribute="bottom" secondItem="UbM-xv-4kL" secondAttribute="bottom" id="8bF-1U-IYL"/>
+                            <constraint firstItem="iax-cF-dre" firstAttribute="leading" secondItem="qfs-0D-ynv" secondAttribute="leading" id="ETB-Ze-JfO"/>
+                            <constraint firstItem="iax-cF-dre" firstAttribute="top" secondItem="qfs-0D-ynv" secondAttribute="top" id="Vg9-ev-zfv"/>
+                            <constraint firstItem="UbM-xv-4kL" firstAttribute="top" secondItem="iax-cF-dre" secondAttribute="bottom" id="ZRq-7L-gve"/>
+                            <constraint firstItem="qfs-0D-ynv" firstAttribute="trailing" secondItem="UbM-xv-4kL" secondAttribute="trailing" id="smw-pw-iMx"/>
+                            <constraint firstItem="UbM-xv-4kL" firstAttribute="leading" secondItem="qfs-0D-ynv" secondAttribute="leading" id="wQm-Vm-yTP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qfs-0D-ynv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hasil Pencarian" id="DKE-lm-qcn">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tz4-2j-hJ4">
+                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="onDismiss:" destination="S1R-xq-KlR" id="0Sc-Jf-bcL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tblViewLokasiList" destination="UbM-xv-4kL" id="KRx-Pm-Sol"/>
+                        <segue destination="6KP-hc-QIH" kind="unwind" identifier="toMap" unwindAction="unwindToLokasi:" id="7TY-Rh-8zj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTS-wO-as0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6KP-hc-QIH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4756" y="2217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Current Location" width="200" height="200"/>
+        <image name="lokasi anda" width="561" height="200"/>
+        <image name="set lokasi pengambilan" width="1372" height="200"/>
+    </resources>
+</document>
